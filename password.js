@@ -7,12 +7,18 @@ const rl = readline.createInterface({
 
 rl.question(`Welcome to the password validator tool. Please enter a password that you would like to validate.`, function saveInput(password) {
     let checkForNum = password.match(/\d+/g);
-    if(password.length >= 10 && checkForNum != null && password.charAt(0) === password.charAt(0).toUpperCase()){
+    let i = 0;
+    while (i <= password.length){
+     if (password.charAt(i) === password.charAt(i).toUpperCase()){
+
+     } else if(password.length >= 10 && checkForNum != null){
             console.log(`Password successfully validated.`)
             } else {
                 console.log(`Password failed to be validated. Password must contain at least 10 digits, at least one number and at least one upper case letter.`)
             }
   rl.close();
+  i++
+}
 });
 
 rl.on("close", function saveInput() {
