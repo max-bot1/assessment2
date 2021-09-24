@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+const gitDefinition = `Git is a software used for tracking files, file locations, and changes to those files on a small or large scale.`
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+const gitHubDefinition = `Github is a hosting service that allows users to store repositories from git on their servers and allowing you to easily access it and view commits through their website.`
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,7 +34,10 @@
 */
 
 //CODE HERE
-
+const init = {
+    description: `Creates a new repository in git using your location in the terminal (Git bash)`,
+    code: 'git init'
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +45,10 @@
 */
 
 //CODE HERE
-
+const clone = {
+    description: `Creates a new repository that is a copy of an existing repository you can also clone to a specific folder.`,
+    code: 'git clone (repository) (file location if any)'
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +56,10 @@
 */
 
 //CODE HERE
-
+const status = {
+    description: `Checks current status of repository and changes made or commits made. Lets you check what files are present and if changes have been saved/committed.`,
+    code: 'git init'
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +67,10 @@
 */
 
 //CODE HERE
-
+const add = {
+    description: `Adds file(s) to the repository`,
+    code: 'git add (file name or . to add all in current location)'
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +78,10 @@
 */
 
 //CODE HERE
-
+const commit = {
+    description: `Commits changes to the repository`,
+    code: 'git commit -m "message"'
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +90,7 @@
 */
 
 //CODE HERE
+const push = {
+    description: `pushes commits and changes made to repository to Git Hub`,
+    code: 'git push'
+}
